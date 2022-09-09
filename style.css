@@ -1,0 +1,160 @@
+body{
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+
+#main{
+  width:100%;
+}
+
+#nav-div{
+  background-color: black;
+  height:70px;
+  width:100%;
+  position:fixed;
+}
+
+#nav-ul{
+  list-style-type: none;
+  display: flex;
+  float: right;
+}
+
+#nav-ul > li > a {
+  padding: 10px 35px 10px 35px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+#nav-ul > li > a:hover{
+  background-color: grey;
+  color: black;
+  
+}
+
+#welcome-div{
+  background-image: linear-gradient(to bottom right, #212121, #000000);
+  margin-top: 70px;
+  margin-bottom: 0px;
+  height:100vh;
+  width:100%;
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+
+
+#welcome-header{
+  font-weight: 700px;
+}
+#welcome-paragraph{
+  font-style: italic;
+}
+
+#projects-div{
+  background-image: linear-gradient(to bottom right, #003333, #212121);
+  width:100%;
+  padding-bottom: 50px;
+  margin-left:auto;
+  margin-right:auto;
+  min-height: 100vh;
+}
+#project-div-list{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 350px));
+  grid-gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  justify-content: center;
+}
+
+.project-tile{
+  display: inline;
+  border: black 1px solid;
+  background-color: #fff;
+  margin: 0px 20px 0px 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.project-tile > a{
+  text-decoration: none;
+  color: none;
+}
+
+#project-list-title{
+  text-align:center;
+  margin-top:0px;
+  padding-top:90px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+#motivation-div{
+  background-image: linear-gradient(to bottom right, #002121, aquamarine);
+  height:100vh;
+  width:100%;
+  
+  
+}
+
+#invite-title{
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-top:350px;
+  padding-bottom: 0px;
+  
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+#invite-paragraph{
+  text-align:center;
+  margin-top:0px;
+  padding-top:0px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 100px;
+  color: white;
+}
+
+#social_buttons{
+  text-align:center;
+}
+
+.btn{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 5px 20px 5px 20px;  
+}
+
+.btn:hover{
+  animation-name: button-hover-animation;
+  animation-duration: .5s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes button-hover-animation{
+  from {
+    font-size: 30px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
